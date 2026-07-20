@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中芯国际 SMIC — 深度分析速览</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background: #0d1117; color: #c9d1d9; display: flex; justify-content: center; padding: 40px 20px;
+}
+.card {
+  max-width: 680px; width: 100%; background: #161b22; border-radius: 16px;
+  border: 1px solid #30363d; overflow: hidden;
+}
+.header {
+  background: linear-gradient(135deg, #1a2332 0%, #0d1117 100%);
+  padding: 28px 32px; border-bottom: 1px solid #21262d;
+  display: flex; justify-content: space-between; align-items: flex-start;
+}
+.title-block h1 { font-size: 24px; color: #f0f6fc; font-weight: 700; margin-bottom: 4px; }
+.title-block .codes { font-size: 13px; color: #8b949e; }
+.rating-block { text-align: right; }
+.rating-block .stars { font-size: 28px; color: #d2991d; letter-spacing: 2px; }
+.rating-block .label { font-size: 13px; color: #f85149; font-weight: 600; margin-top: 4px; }
+.price-bar {
+  display: flex; justify-content: space-between; padding: 20px 32px;
+  background: #0d1117; border-bottom: 1px solid #21262d;
+}
+.price-item { text-align: center; }
+.price-item .val { font-size: 28px; font-weight: 700; color: #3fb950; }
+.price-item .lbl { font-size: 12px; color: #8b949e; margin-top: 2px; }
+.metrics {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
+  background: #21262d;
+}
+.metric {
+  background: #161b22; padding: 14px 16px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.metric .key { font-size: 13px; color: #8b949e; }
+.metric .val { font-size: 14px; font-weight: 600; }
+.metric .val.bad { color: #f85149; }
+.metric .val.warn { color: #d2991d; }
+.metric .val.good { color: #3fb950; }
+.verdict {
+  padding: 20px 32px; background: linear-gradient(135deg, #2d1215 0%, #161b22 100%);
+  border-top: 1px solid #30363d;
+}
+.verdict h3 { font-size: 15px; color: #f85149; margin-bottom: 12px; }
+.verdict ul { list-style: none; }
+.verdict li { font-size: 13px; color: #c9d1d9; padding: 4px 0; padding-left: 16px; position: relative; }
+.verdict li::before { content: "▸"; position: absolute; left: 0; color: #f85149; }
+.masters {
+  padding: 16px 32px; border-top: 1px solid #21262d;
+  display: flex; gap: 12px; flex-wrap: wrap;
+}
+.master-vote { display: flex; align-items: center; gap: 4px; font-size: 12px; }
+.master-vote .icon { font-size: 16px; }
+.footer {
+  padding: 16px 32px; border-top: 1px solid #21262d;
+  font-size: 11px; color: #484f58; text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="header">
+    <div class="title-block">
+      <h1>中芯国际 SMIC</h1>
+      <div class="codes">688981.SH · 00981.HK · 晶圆代工 #5</div>
+    </div>
+    <div class="rating-block">
+      <div class="stars">★★☆☆☆</div>
+      <div class="label">不买</div>
+    </div>
+  </div>
+  
+  <div class="price-bar">
+    <div class="price-item">
+      <div class="val">¥145.80</div>
+      <div class="lbl">A股 +3.98%</div>
+    </div>
+    <div class="price-item">
+      <div class="val">HKD 69.60</div>
+      <div class="lbl">港股 +2.81%</div>
+    </div>
+    <div class="price-item">
+      <div class="val">¥12,482亿</div>
+      <div class="lbl">A股总市值</div>
+    </div>
+    <div class="price-item">
+      <div class="val">¥16.29</div>
+      <div class="lbl">格雷厄姆数</div>
+    </div>
+  </div>
+
+  <div class="metrics">
+    <div class="metric"><span class="key">PE(TTM)</span><span class="val bad">231.4x</span></div>
+    <div class="metric"><span class="key">PB</span><span class="val bad">7.79x</span></div>
+    <div class="metric"><span class="key">PS</span><span class="val bad">18.5x</span></div>
+    <div class="metric"><span class="key">PEG</span><span class="val bad">6.4x</span></div>
+    <div class="metric"><span class="key">ROE</span><span class="val bad">3.4%</span></div>
+    <div class="metric"><span class="key">毛利率</span><span class="val warn">21.6%</span></div>
+    <div class="metric"><span class="key">FCF</span><span class="val bad">-¥90亿</span></div>
+    <div class="metric"><span class="key">负债率</span><span class="val good">34.9%</span></div>
+    <div class="metric"><span class="key">FY25 营收</span><span class="val good">¥673亿 +16.5%</span></div>
+    <div class="metric"><span class="key">FY25 净利润</span><span class="val warn">¥50.4亿 +36.3%</span></div>
+    <div class="metric"><span class="key">Q1 2026 营收</span><span class="val warn">¥176亿 +8.1%</span></div>
+    <div class="metric"><span class="key">Q1 2026 净利润</span><span class="val bad">¥13.6亿 +0.4%</span></div>
+    <div class="metric"><span class="key">52周高/低</span><span class="val">¥167.86 / ¥111.90</span></div>
+    <div class="metric"><span class="key">安全边际</span><span class="val bad">-894%</span></div>
+  </div>
+
+  <div class="verdict">
+    <h3>⚠ 致命问题（6项）</h3>
+    <ul>
+      <li>ROE 3.4% &lt;&lt; WACC 8% — 持续价值毁灭</li>
+      <li>毛利率 38.3%→21.6% 断崖下跌，恢复遥遥无期</li>
+      <li>FCF持续为负 ~-¥90亿/年，永远在融资</li>
+      <li>Q1 2026 净利润近乎零增长 (+0.4%)</li>
+      <li>PE 231x — 即便回归FY22巅峰利润，PE仍103x</li>
+      <li>格雷厄姆数¥16.29，现价溢价894%</li>
+    </ul>
+  </div>
+
+  <div class="masters">
+    <div class="master-vote"><span class="icon">❌</span>格雷厄姆</div>
+    <div class="master-vote"><span class="icon">❌</span>巴菲特</div>
+    <div class="master-vote"><span class="icon">❌</span>芒格</div>
+    <div class="master-vote"><span class="icon">❌</span>林奇</div>
+    <div class="master-vote"><span class="icon">△</span>费雪</div>
+    <div class="master-vote"><span class="icon">❌</span>段永平</div>
+    <div class="master-vote"><span class="icon">❌</span>马克斯</div>
+    <div class="master-vote"><span class="icon">△</span>达利欧</div>
+    <div class="master-vote"><span class="icon">△</span>索罗斯</div>
+    <div class="master-vote"><span class="icon">❌</span>西蒙斯</div>
+  </div>
+
+  <div class="footer">
+    综合合理估值 ¥10-25 · 概率加权 ¥15.30 · 大师共识 0/10买入 · 建议: 不买/卖出
+  </div>
+</div>
+</body>
+</html>
