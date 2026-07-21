@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>思源电气 投资速览</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: system-ui, -apple-system, 'Noto Sans SC', sans-serif;
+  background: #0a0e27;
+  display: flex; justify-content: center; align-items: center;
+  min-height: 100vh; padding: 20px;
+}
+.card {
+  background: linear-gradient(135deg, #0f1535 0%, #1a1f45 100%);
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 720px; width: 100%;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+.header {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  margin-bottom: 24px;
+}
+.title-block h1 { font-size: 28px; color: #e8eaf6; font-weight: 700; }
+.title-block .code { font-size: 14px; color: #7c8db5; margin-top: 4px; }
+.price-block { text-align: right; }
+.price { font-size: 36px; color: #00e676; font-weight: 700; }
+.change { font-size: 16px; color: #00e676; }
+.badge {
+  display: inline-block; padding: 4px 12px; border-radius: 20px;
+  font-size: 12px; font-weight: 600; margin: 4px 2px;
+}
+.badge-bullish { background: rgba(0,230,118,0.15); color: #00e676; border: 1px solid rgba(0,230,118,0.3); }
+.badge-neutral { background: rgba(255,171,64,0.15); color: #ffab40; border: 1px solid rgba(255,171,64,0.3); }
+.badge-bearish { background: rgba(255,82,82,0.15); color: #ff5252; border: 1px solid rgba(255,82,82,0.3); }
+.stars { font-size: 22px; letter-spacing: 2px; }
+.section { margin-bottom: 20px; }
+.section-title { font-size: 13px; color: #536dfe; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; font-weight: 600; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+.grid4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; }
+.metric {
+  background: rgba(255,255,255,0.04); border-radius: 10px;
+  padding: 12px 14px; border: 1px solid rgba(255,255,255,0.05);
+}
+.metric-label { font-size: 11px; color: #7c8db5; margin-bottom: 4px; }
+.metric-value { font-size: 20px; font-weight: 700; color: #e8eaf6; }
+.metric-value.green { color: #00e676; }
+.metric-value.red { color: #ff5252; }
+.metric-value.yellow { color: #ffab40; }
+.metric-sub { font-size: 11px; color: #6b7db5; margin-top: 2px; }
+.masters {
+  display: flex; flex-wrap: wrap; gap: 6px;
+}
+.master {
+  padding: 3px 10px; border-radius: 12px; font-size: 11px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.master.buy { border-color: rgba(0,230,118,0.4); color: #00e676; }
+.master.wait { border-color: rgba(255,171,64,0.4); color: #ffab40; }
+.master.sell { border-color: rgba(255,82,82,0.4); color: #ff5252; }
+.verdict {
+  background: linear-gradient(135deg, rgba(83,109,254,0.15), rgba(83,109,254,0.05));
+  border-radius: 12px; padding: 16px; text-align: center;
+  border: 1px solid rgba(83,109,254,0.3);
+}
+.verdict-text { font-size: 18px; color: #c7d2fe; font-weight: 500; }
+.verdict-sub { font-size: 13px; color: #536dfe; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="header">
+    <div class="title-block">
+      <h1>思源电气</h1>
+      <div class="code">002028.SZ · 电网设备 · 深交所</div>
+      <div style="margin-top:8px">
+        <span class="badge badge-bullish">谨慎看多</span>
+        <span class="badge badge-neutral">分批建仓</span>
+      </div>
+    </div>
+    <div class="price-block">
+      <div class="price">155.44</div>
+      <div class="change">+3.94 (+2.60%)</div>
+      <div style="color:#7c8db5;font-size:12px;margin-top:4px">2026-07-21 14:06</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">评级总览</div>
+    <div class="grid3">
+      <div class="metric" style="text-align:center">
+        <div class="metric-label">赛道</div>
+        <div class="stars">★★★★★</div>
+        <div class="metric-sub">电网超级周期</div>
+      </div>
+      <div class="metric" style="text-align:center">
+        <div class="metric-label">公司</div>
+        <div class="stars">★★★★</div>
+        <div class="metric-sub">民营龙头</div>
+      </div>
+      <div class="metric" style="text-align:center">
+        <div class="metric-label">价格</div>
+        <div class="stars">★★★</div>
+        <div class="metric-sub">合理偏高</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">核心估值</div>
+    <div class="grid4">
+      <div class="metric">
+        <div class="metric-label">PE (TTM)</div>
+        <div class="metric-value yellow">28.4x</div>
+        <div class="metric-sub">1年低位</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">PEG</div>
+        <div class="metric-value green">0.72</div>
+        <div class="metric-sub">林奇低估</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">ROE 2025</div>
+        <div class="metric-value green">22.6%</div>
+        <div class="metric-sub">持续提升</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">DCF估值</div>
+        <div class="metric-value">142.6</div>
+        <div class="metric-sub">溢价+9%</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">成长性</div>
+    <div class="grid3">
+      <div class="metric">
+        <div class="metric-label">2025 营收增速</div>
+        <div class="metric-value green">+39.3%</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">2025 利润增速</div>
+        <div class="metric-value green">+53.7%</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">2026H1 营收</div>
+        <div class="metric-value">108亿</div>
+        <div class="metric-sub">+27.1%</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">财务健康</div>
+    <div class="grid4">
+      <div class="metric">
+        <div class="metric-label">银行借款</div>
+        <div class="metric-value green">0</div>
+        <div class="metric-sub">零有息负债</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">负债率</div>
+        <div class="metric-value green">45.9%</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">商誉</div>
+        <div class="metric-value green">0</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">经营现金流/利润</div>
+        <div class="metric-value yellow">71%</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">十大师共识</div>
+    <div class="masters">
+      <span class="master sell">格雷厄姆 ❌</span>
+      <span class="master wait">巴菲特 ⚠️</span>
+      <span class="master buy">林奇 ✅</span>
+      <span class="master buy">费雪 ✅</span>
+      <span class="master buy">段永平 ✅</span>
+      <span class="master buy">达利欧 ✅</span>
+      <span class="master wait">马克斯 ⚠️</span>
+      <span class="master wait">索罗斯 ⚠️</span>
+      <span class="master wait">芒格 ⚠️</span>
+      <span class="master sell">西蒙斯 ❌</span>
+    </div>
+    <div style="color:#7c8db5;font-size:11px;margin-top:6px">买入x4 | 观望x4 | 卖出x2 → 谨慎看多</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">红旗检查</div>
+    <div class="metric" style="text-align:center">
+      <div style="font-size:14px;color:#e8eaf6">
+        致命 <span style="color:#ff5252;font-weight:700;font-size:20px">0</span> &nbsp;
+        严重 <span style="color:#ffab40;font-weight:700;font-size:20px">0</span> &nbsp;
+        轻微 <span style="color:#ffab40;font-weight:700;font-size:20px">8</span>
+      </div>
+      <div class="metric-sub">Q18管理层诚信 ✅ 通过 — 无致命红旗</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="verdict">
+      <div class="verdict-text">好赛道 + 好公司 + 合理偏贵 = 分3-4批在140-150区间建仓</div>
+      <div class="verdict-sub">等待北向减持企稳 + H2增速确认后加仓 | 止损线: ROE<15%或国网投资大幅缩减</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
