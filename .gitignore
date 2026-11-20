@@ -4,3 +4,9 @@ __pycache__/
 reports/
 *.log
 .venv/
+
+# Generated analysis reports and overview cards (keep reusable templates/)
+/20[0-9][0-9][0-9][0-9][0-9][0-9]_*
+/overview_card_*.html
+/overview_card_*.svg
+/correction_comment.md
